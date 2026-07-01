@@ -1,0 +1,15 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+authors = [{name = "Petra Nowak"}]
+name = "thermoflux"
+version = "0.10.1"
+description = "Conduction/convection/radiation plus LMTD heat-exchanger sizing."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "Unlicense"}
+
+[tool.hatch.build.targets.wheel]
+packages = ["thermoflux"]
